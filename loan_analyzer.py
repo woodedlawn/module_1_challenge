@@ -18,16 +18,22 @@ loan_costs = [500, 600, 200, 1000, 450]
 # @TODO: Use the `len` function to calculate the total number of loans in the list.
 # Print the number of loans from the list
 # YOUR CODE HERE!
+loans_count = len(loan_costs)
+print(f"the number of loans from the list is {loans_count}")
 
 # What is the total of all loans?
 # @TODO: Use the `sum` function to calculate the total of all loans in the list.
 # Print the total value of the loans
 # YOUR CODE HERE!
+loans_total = sum(loan_costs)
+print(f"the total value of the loans is {loans_total}")
 
 # What is the average loan amount from the list?
 # @TODO: Using the sum of all loans and the total number of loans, calculate the average loan price.
 # Print the average loan amount
 # YOUR CODE HERE!
+loans_average = loans_total / loans_count
+print(f"the average loan amount is {loans_average}")
 
 """Part 2: Analyze Loan Data.
 
@@ -69,7 +75,6 @@ loan = {
 # Use a minimum required return of 20% as the discount rate.
 #   You'll want to use the **monthly** version of the present value formula.
 #   HINT: Present Value = Future Value / (1 + Discount_Rate/12) ** remaining_months
-
 # YOUR CODE HERE!
 
 # If Present Value represents what the loan is really worth, does it make sense to buy the loan at its cost?
